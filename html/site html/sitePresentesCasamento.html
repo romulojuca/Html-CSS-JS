@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="grey">
+    <h1>Lista de Presentes</h1>
+    <h1><b>Romulo & Thais</b></h1>
+    <form method="post" action="teste.jsp"><!--Method POST nao aparece na aba de pesquisa as inf. enquanto o GET aparece quando clica em enviar-->
+    Digite seu nome:
+        <input type="text" name="nome"><br><br><!--Cria caixa de texto-->
+    Valor aproximado do presente:<br><br>
+        <input type="radio" name="valorPresente" value="0-300" checked>R$0 ~ 300<br><!--cria caixa de seleção-->
+        <select name="presentes0-300"><!--cria caixa de opções-->
+            <option>----</option><!--cria os nomes dentro da caixa de opções-->
+            <option>Jogo de Toalhas</option>
+            <option>Jogo de Copos</option>
+            <option>Jogo de Talheres</option>
+        </select><br><br>
+        <input type="radio" name="valorPresente" value="300-1000">R$300 ~ 1000<br>
+        <select name="presentes300-1000">
+            <option>----</option>
+            <option>Air Fryer</option>
+            <option>aspirador</option>
+            <option>Cadeira de encosto</option>
+
+        </select><br><br>
+        <input type="radio" name="valorPresente" value="1000-maior">R$1000 ou maior.<br>
+        <select name="presentes1000oumaior">
+            <option>----</option>
+            <option>Geladeira</option>
+            <option>Sofá</option>
+            <option>Televisão</option>
+        </select><br><br>
+        Forma de pagamento:
+        <input type="radio" name="formaPagamento" value="sim"> Cartão<!--cria caixa de seleção-->
+        <input type="radio" name="formaPagamento" value="sim" checked> Pix
+        <input type="radio" name="formaPagamento" value="sim"> Boleto<br><br>
+        Data da entrega: <input type="date" name="dataEntrega"><br>
+        <br>Deixe uma menssagem para os noivos: <br><textarea name="menssagem" rows="10" cols="30"></textarea><!--cria caixa de texto grande, rows é as linhas e cols colunas-->
+        <br><input type="submit">
+    </form>
+    
+</body>
+
+</html>

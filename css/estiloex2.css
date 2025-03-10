@@ -1,0 +1,12 @@
+.imagem{
+    background: url(uninterlogo.jpg) no-repeat;
+    width: 999px;
+    height: 700px;
+    display: block;
+}
+.imagem:hover{
+    background-position: 0px 80px;
+}/* quando o mouse passa ela move */
+.imagem:active{
+    background-position: 50px 50px;
+}/* quando o mouse segura clicado ela move */

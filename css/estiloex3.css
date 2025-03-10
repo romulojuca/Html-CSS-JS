@@ -1,0 +1,15 @@
+.alternada{
+    list-style: upper-roman;
+    font-size: 30px;
+    color: rgb(20, 20, 221);
+    width: fit-content;/*limita as cores de fundo ao objeto*/
+}
+.alternada li:nth-child(odd){/*os filhos da li odd(impar em ingles) mudam pra essa cor*/
+    background-color: rgb(61, 116, 165);
+}/*Impar*/
+.alternada li:nth-child(even){/*os filhos da li even(par em ingles) mudam pra essa cor*/
+    background-color: rgb(176, 189, 201);
+}/*PAR*/
+.alternada li:hover{/*passar o mouse deixa bolder(muito negrito)*/
+    font-weight: bolder;
+}
